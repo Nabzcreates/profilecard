@@ -105,11 +105,10 @@ function changeToCat() {
 document.getElementById("btn").addEventListener("click", function() {
   if(document.getElementById("name").innerText== "Nabilah Wahab"){
     changeToDog();
-  } else if(document.getElementById("name").innerText== dog.name){
+  } else if(document.getElementById("name").innerText == dog.name){
     changeToCat();
-  }else{
-    window.location.reload();
-    
+  }else if(document.getElementById("name").innerText == cat.name){
+    changeToDog();
   }
 })
 
